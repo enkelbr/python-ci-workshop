@@ -12,6 +12,6 @@ install:
   - pip install -r requirements_dev.txt
 # command to run tests
 script:
-  - pytest test_validators.py --cov
+  - pytest test_validators.py --cov=validators
 after_success:
   - coveralls
